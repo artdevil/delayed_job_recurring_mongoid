@@ -24,5 +24,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'timecop', '~> 0.7.1'
 
   s.add_runtime_dependency 'delayed_job', '>= 3.0'
-  s.add_runtime_dependency 'delayed_job_active_record'
+  s.add_runtime_dependency 'delayed_job_mongoid'
 end

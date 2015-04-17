@@ -158,7 +158,8 @@ module Delayed
 
       # Show all jobs for this schedule
       def jobs
-        ::Delayed::Job.where("(handler LIKE ?) OR (handler LIKE ?)", "--- !ruby/object:#{name} %", "--- !ruby/object:#{name}\n%")
+        ::Delayed::Job.any_of({:handler => Regexp.new(".*--- !ruby/object:#{name}.*")})
+        # ::Delayed::Job.where("(handler LIKE ?) OR (handler LIKE ?)", "--- !ruby/object:#{name} %", "--- !ruby/object:#{name}\n%")
       end
 
       # Remove all jobs for this schedule (Stop the schedule)
