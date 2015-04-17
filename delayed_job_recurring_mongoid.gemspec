@@ -17,9 +17,10 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency 'rails'
   s.add_development_dependency 'rake'
-  s.add_development_dependency 'rspec', '3.0.0'
-  s.add_development_dependency 'rspec-rails', '3.0.1'
-  s.add_development_dependency 'sqlite3', '~> 1.3'
+  s.add_development_dependency 'mongoid-rspec', '~> 2.1.0'
+  s.add_development_dependency 'rspec-rails'
+  s.add_development_dependency 'timecop'
+  s.add_development_dependency 'mongoid', '~> 4.0.0'
   s.add_development_dependency 'database_cleaner', '~> 1.3'
   s.add_development_dependency 'timecop', '~> 0.7.1'
 

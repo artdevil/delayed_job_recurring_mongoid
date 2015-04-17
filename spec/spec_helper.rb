@@ -1,8 +1,10 @@
-require 'support/db'
 require 'database_cleaner'
+require 'mongoid'
 require 'timecop'
 
-DatabaseCleaner.strategy = :transaction
+Mongoid.load!('spec/support/mongoid.yml', :test)
+
+DatabaseCleaner.strategy = :truncation
 RSpec.configure do |config|
   config.before(:each) do
     DatabaseCleaner.start

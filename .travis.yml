@@ -4,6 +4,8 @@ rvm:
   - "1.9.3"
   - "2.0.0"
   - "2.1.0"
+services:
+  - mongodb
 gemfile:
   - "gemfiles/delayed_job_3.gemfile"
   - "gemfiles/delayed_job_4.gemfile"
