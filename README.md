@@ -5,10 +5,12 @@ Extends delayed\_job to support recurring jobs.
 
 ## Usage
 
+this is copy project from https://github.com/amitree/delayed_job_recurring and make it compatible with mongoid.
+
 Add it to your Gemfile:
 
 ```ruby
-gem 'delayed_job_recurring'
+gem 'delayed_job_recurring_mongoid'
 ```
 
 Then define a task class.  We like the concept of
