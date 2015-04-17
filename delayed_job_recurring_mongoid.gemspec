@@ -21,6 +21,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rspec-rails'
   s.add_development_dependency 'timecop'
   s.add_development_dependency 'mongoid'
+  s.add_development_dependency 'bson_ext'
   s.add_development_dependency 'database_cleaner', '~> 1.3'
   s.add_development_dependency 'timecop', '~> 0.7.1'
 
