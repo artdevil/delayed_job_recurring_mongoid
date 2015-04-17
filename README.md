@@ -18,6 +18,8 @@ Then define a task class.  We like the concept of
 so we put our task classes in `app/interactors`.  You could also put them in `lib` or even `app/models`.
 
 ```ruby
+require 'delayed_job_recurring'
+
 class MyTask
   include Delayed::RecurringJob
   run_every 1.day
