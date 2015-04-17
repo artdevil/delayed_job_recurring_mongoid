@@ -1,5 +1,5 @@
 # delayed\_job\_recurring\_mongoid
-[![Build Status](https://travis-ci.org/amitree/delayed_job_recurring.svg)](https://travis-ci.org/amitree/delayed_job_recurring)
+[![Build Status](https://travis-ci.org/artdevil/delayed_job_recurring_mongoid.svg?branch=master)](https://travis-ci.org/artdevil/delayed_job_recurring_mongoid)
 
 Extends delayed\_job to support recurring jobs.
 
